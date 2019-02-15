@@ -72,7 +72,7 @@ public class BillingProcessor extends BillingBase
 		DATE_MERCHANT_LIMIT_2 = calendar.getTime();
 	}
 
-	private static final int PURCHASE_FLOW_REQUEST_CODE = 32459;
+	public static final int PURCHASE_FLOW_REQUEST_CODE = 32459;
 	private static final String LOG_TAG = "iabv3";
 	private static final String SETTINGS_VERSION = ".v2_6";
 	private static final String RESTORE_KEY = ".products.restored" + SETTINGS_VERSION;
@@ -810,7 +810,7 @@ public class BillingProcessor extends BillingBase
 
 	private SkuDetails getSkuDetails(String productId, String purchaseType)
 	{
-		ArrayList<String> productIdList = new ArrayList<String>();
+		ArrayList<String> productIdList = new ArrayList<>();
 		productIdList.add(productId);
 		List<SkuDetails> skuDetailsList = getSkuDetails(productIdList, purchaseType);
 		if (skuDetailsList != null && skuDetailsList.size() > 0)
@@ -836,7 +836,7 @@ public class BillingProcessor extends BillingBase
 
 				if (response == Constants.BILLING_RESPONSE_RESULT_OK)
 				{
-					ArrayList<SkuDetails> productDetails = new ArrayList<SkuDetails>();
+					ArrayList<SkuDetails> productDetails = new ArrayList<>();
 					List<String> detailsList = skuDetails.getStringArrayList(Constants.DETAILS_LIST);
 					if (detailsList != null)
 					{
