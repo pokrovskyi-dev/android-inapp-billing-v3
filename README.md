@@ -1,3 +1,11 @@
+```groovy
+dependencies {
+        implementation 'com.github.pokrovskyi-dev:android-inapp-billing-v3:1.0.45-serhii'
+}
+```
+
+
+## Original description:
 # Android In-App Billing v3 Library [![Build Status](https://travis-ci.org/anjlab/android-inapp-billing-v3.svg?branch=master)](https://travis-ci.org/anjlab/android-inapp-billing-v3)  [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.anjlab.android.iab.v3/library/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.anjlab.android.iab.v3/library)
 
 This is a simple, straight-forward implementation of the Android v3 In-app billing API.
